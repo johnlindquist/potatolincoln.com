@@ -17,7 +17,7 @@ function Bio() {
               marginBottom: rhythm(2.5),
             }}
           >
-            <Image
+            {/* <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
               style={{
@@ -26,11 +26,9 @@ function Bio() {
                 minWidth: 50,
                 borderRadius: `100%`,
               }}
-            />
+            /> */}
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
+              Written by <strong>{author}</strong> .{` `}
               <a href={`https://twitter.com/${social.twitter}`}>
                 You should follow him on Twitter
               </a>

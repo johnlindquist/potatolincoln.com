@@ -1,15 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Paginated Blog',
-    author: 'Kyle Mathews',
-    description:
-      'A paginated starter blog demonstrating what Gatsby can do. Extension of gatsby-starter-blog.',
-    siteUrl: 'https://nickymeuleman.github.io/gatsby-paginated-blog/',
+    title: 'potatolincoln.com',
+    author: 'Ben Lindquist',
+    description: 'The hijinx of Potato Lincoln',
+    siteUrl: 'https://potatolincoln.com',
     social: {
-      twitter: `kylemathews`,
+      twitter: `potatolincoln`,
     },
   },
-  pathPrefix: '/gatsby-paginated-blog',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
