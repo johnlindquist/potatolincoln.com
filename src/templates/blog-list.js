@@ -30,7 +30,8 @@ class BlogIndex extends React.Component {
             <div key={node.fields.slug}>
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  marginTop: rhythm(0.5),
+                  marginBottom: rhythm(0.5),
                 }}
               >
                 <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
@@ -38,7 +39,7 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <p dangerouslySetInnerHTML={{ __html: node.html }} />
             </div>
           )
         })}
@@ -104,6 +105,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          html
           excerpt
           fields {
             slug
